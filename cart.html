@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Procktails | Cart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Procktails</div>
+    <nav class="main-nav">
+      <a href="index.html#products">Store</a>
+      <a href="index.html#recipes">Recipes</a>
+      <a href="index.html#tutorials">Tutorials</a>
+      <a href="index.html#about">About</a>
+    </nav>
+    <a class="cart-badge" href="cart.html">
+      <span class="cart-icon" aria-hidden="true">👜</span>
+      <span class="cart-count" aria-live="polite">0</span>
+    </a>
+  </header>
+
+  <main class="cart-page">
+    <p class="eyebrow">Your Bag</p>
+    <h1>Cart</h1>
+    <p class="section-lede">Review your selections, adjust quantities, or keep browsing.</p>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+      <a class="btn ghost" href="index.html#products">Continue shopping</a>
+      <div>
+        <p class="tagline">Subtotal: <strong id="subtotal">$0.00</strong></p>
+        <button class="btn primary" id="checkoutBtn" aria-label="Checkout coming soon">Checkout (Coming Soon)</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
